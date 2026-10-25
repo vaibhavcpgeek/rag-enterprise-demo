@@ -1,0 +1,36 @@
+import type { SourceDocument } from "./ingestion.js";
+export const demoDocuments: SourceDocument[] = [
+  {
+    id: "HR-042",
+    title: "Annual Leave Policy",
+    sourceUrl: "https://example.invalid/policies/HR-042",
+    department: "HR",
+    tenantId: "demo",
+    accessGroups: ["employees"],
+    version: 3,
+    effectiveDate: "2026-10-01",
+    text: `# Annual Leave Policy\n\nEligible full-time employees receive 25 days of annual leave per leave year, excluding public holidays. Part-time entitlement is calculated pro rata.\n\n## Carry-over policy\n\nUnused annual leave may be carried forward only with manager approval. A maximum of five days may be carried forward into the next leave year, subject to local employment terms. Any more restrictive contractual rule takes precedence.\n\n## Booking leave\n\nEmployees should submit leave requests through the employee portal. Leave is not approved until the manager confirms it in the system.`,
+  },
+  {
+    id: "IT-017",
+    title: "Password Reset Guide",
+    sourceUrl: "https://example.invalid/it/IT-017",
+    department: "IT",
+    tenantId: "demo",
+    accessGroups: ["employees"],
+    version: 2,
+    effectiveDate: "2026-06-01",
+    text: `# Password Reset Guide\n\nEmployees who forget their password should use the approved identity portal and complete multi-factor authentication.\n\n## Access support\n\nIf the self-service reset fails, contact the service desk. Never share passwords or one-time authentication codes with another person.`,
+  },
+  {
+    id: "FIN-008",
+    title: "Refund Policy",
+    sourceUrl: "https://example.invalid/finance/FIN-008",
+    department: "Finance",
+    tenantId: "demo",
+    accessGroups: ["finance"],
+    version: 4,
+    effectiveDate: "2026-09-01",
+    text: `# Refund Policy\n\nRefunds must be supported by an approved case and an auditable transaction record. Eligibility depends on the product terms and applicable regulatory requirements.\n\n## Exceptions\n\nExceptions require approval from an authorised Finance manager. Do not promise a refund before the case has been reviewed.`,
+  },
+];
